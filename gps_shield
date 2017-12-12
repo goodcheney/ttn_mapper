@@ -250,7 +250,7 @@ void GPSWrite()
   for(int k = 0; k < 20;k++)
   {
   Serial.print("[");
-  Serial.print(datasend[i], HEX);
+  Serial.print(datasend[k], HEX);
   Serial.print("]");
   }*/
   Serial.println("");

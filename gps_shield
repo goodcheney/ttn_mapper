@@ -219,7 +219,7 @@ void GPSWrite()
   /*Convert GPS data to format*/
   datastring1 +=dtostrf(flat, 0, 4, gps_lat);   
   datastring2 +=dtostrf(flon, 0, 4, gps_lon);
-  //datastring3 +=dtostrf(falt, 0, 2, gps_alt);
+  //datastring3 +=dtostrf(falt, 0, 2, gps_alt); 
 
  
   
@@ -229,15 +229,12 @@ void GPSWrite()
   strcat(gps_lon,gps_lat); 
   //strcat(gps_lon,","); 
   //strcat(gps_lon,gps_alt);
-    int i = 0;
-  for(i = 0; i < 2; i++)
+    
+  
+  for(int i = 0; i < 2; i++)
   {
-      //datasend.toFloat();
       atof(gps_lon);
-     //Serial.println((char*)datasend);
     //Serial.print(gps_lon);
-    // atof(gps_alt);
-    // Serial.print(gps_alt);
   }
   
   strcpy(datasend,gps_lon); //the format of datasend is longtitude,latitude,altitude
